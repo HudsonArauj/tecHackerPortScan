@@ -22,9 +22,15 @@ def get_service_name(port):
         20: "FTP (Data)",
         21: "FTP (Control)",
         22: "SSH",
-        # Adicione mais portas e serviços conforme necessário
+        23: "Telnet",
+        25: "SMTP",
+        53: "DNS",
+        80: "HTTP",
+        110: "POP3",
+        143: "IMAP",
     }
     return well_known_ports.get(port, "Unknown")
+
 
 # Interface gráfica
 root = tk.Tk()
